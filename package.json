@@ -1,0 +1,92 @@
+{
+  "name": "dnh",
+  "version": "1.10.0",
+  "description": "Touhou Danmakufu extension for Visual Studio Code",
+  "keywords": [
+    "touhou",
+    "touhou-danmakufu",
+    "syntax-highlighting",
+    "language-server"
+  ],
+  "author": "Michael Serajnik <ms@mserajnik.at>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mserajnik/dnh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mserajnik/dnh/issues"
+  },
+  "scripts": {
+    "vscode:prepublish": "cd client && yarn update-vscode && cd .. && yarn compile",
+    "clean": "rimraf ./client/out && rimraf ./server/out",
+    "compile": "yarn clean && tsc -b",
+    "postinstall": "cd client && yarn && cd ../server && yarn && cd ..",
+    "test": "yarn compile"
+  },
+  "publisher": "mserajnik",
+  "displayName": "dnh",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "activationEvents": [
+    "onLanguage:dnh"
+  ],
+  "main": "./client/out/extension",
+  "categories": [
+    "Programming Languages"
+  ],
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "color": "#a5101e",
+    "theme": "dark"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "dnh",
+        "aliases": [
+          "Touhou Danmakufu",
+          "dnh"
+        ],
+        "extensions": [
+          ".dnh"
+        ],
+        "firstLine": "^\\s*(#TouhouDanmakufu|script_|#include|#UserShotData|#UserItemData).*",
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[dnh]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+      }
+    },
+    "grammars": [
+      {
+        "language": "dnh",
+        "scopeName": "source.dnh",
+        "path": "./syntaxes/dnh.tmLanguage.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "dnh",
+        "path": "./snippets/dnh.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.0",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "rimraf": "^3.0.1",
+    "typescript": "^3.7.5"
+  }
+}

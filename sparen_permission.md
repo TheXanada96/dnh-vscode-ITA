@@ -1,26 +1,26 @@
-__From:__ Andrew Fan  
-__Subject:__ Re: Usage of your Danmakufu ph3 function reference  
-__Date:__ Sun, 24 Jun 2018 12:35:08 -0700 (PDT)⁩  
-__To:__ Michael Serajnik  
+__Da:__ Andrew Fan  
+__Soggetto:__ Re: Usage of your Danmakufu ph3 function reference  
+__Data:__ Sun, 24 Jun 2018 12:35:08 -0700 (PDT)⁩  
+__a:__ Michael Serajnik  
 
-To Mr. Serajnik,
+Al signor Serajnik,
 
-If you would like to use my function reference for your VS Code extension,
-please feel free to do so. However, I may update the JSON files without prior
-notice if a bug report comes in, and there is no guarantee of accuracy, since
-most of the information was copied and adapted from a public wiki + Google
-Translate. The structure of the JSON files should not change anytime in the
-future, but if it does there will probably be no prior notice.
+Se desidera utilizzare il mio riferimento di funzione per la sua estensione di VS Code,
+si senta libero di farlo. Tuttavia, posso aggiornare i file JSON senza preavviso se arriva una
+senza preavviso, in caso di segnalazione di un bug, e non c'è alcuna garanzia di accuratezza, poiché la maggior parte delle informazioni è stata copiata e adattata da
+la maggior parte delle informazioni è stata copiata e adattata da un wiki pubblico e da Google Translate.
+Traduci. La struttura dei file JSON non dovrebbe cambiare in futuro.
+futuro, ma se dovesse cambiare probabilmente non ci sarà alcun preavviso.
 
-If you do use it though, it would be preferable to cite me in the credits and
-also provide a link to my English function reference at
-https://sparen.github.io/ph3tutorials/docs.html as well as the official
-documentation at
+Se lo utilizzate, però, sarebbe preferibile citarmi nei crediti e fornire un link alla mia funzione in inglese.
+e fornire anche un link alla mia funzione inglese di riferimento all'indirizzo
+https://sparen.github.io/ph3tutorials/docs.html e alla documentazione ufficiale
+documentazione ufficiale all'indirizzo
 http://www.geocities.co.jp/SiliconValley-Oakland/9951/pre/th_dnh_help_v3.html
 
-This should ensure that if something *is* wrong, the source and official
-reference can be found with ease.
+Questo dovrebbe garantire che, se qualcosa non va, la fonte e il riferimento ufficiale possano essere trovati facilmente.
+ufficiale possano essere trovati facilmente.
 
-Thank you,
+Grazie,
 
 Andrew Fan (Sparen of Iría)

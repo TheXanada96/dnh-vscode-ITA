@@ -1,14 +1,14 @@
 <h1>
   <img
     src="https://github.com/mserajnik/dnh/raw/master/images/logo.png"
-    alt="Drawing of Flandre Scarlet by Alphes"
+    alt="Disegno di Flandre Scarlet fatto da Alphes"
     width="182">
   <br>
   dnh
   <a href="https://marketplace.visualstudio.com/items?itemName=mserajnik.dnh">
     <img
       src="https://img.shields.io/vscode-marketplace/v/mserajnik.dnh.svg"
-      alt="dnh on the VS Code Marketplace">
+      alt="dnh sul Marketplace VS Code">
   </a>
   <a href="https://travis-ci.com/mserajnik/dnh">
     <img src="https://travis-ci.com/mserajnik/dnh.svg" alt="Build status">
@@ -25,96 +25,93 @@
   </a>
 </h1>
 
-> Touhou Danmakufu extension for Visual Studio Code
+> Estensione Touhou Danmakufu per Visual Studio Code
 
-![Syntax highlighting example][syntax-highlighting-example]
+![Esempio di evidenziazione della sintassi][syntax-highlighting-example]
 
-This is a simple [Visual Studio Code][vs-code] extension that adds some
-features to make developing [Touhou Danmakufu][touhou-danmakufu] scripts more
-comfortable. It currently features:
+Questa è una semplice estensione [Visual Studio Code][vs-code] che aggiunge alcuni
+funzionalità per rendere lo sviluppo di script dnh [Touhou Danmakufu][touhou-danmakufu] più
+comodo. Attualmente dispone di:
 
-+ Syntax highlighting
-+ Code completion for ph3 engine library functions, headers, routines and
-  shot/item data
-+ On-Demand documentation for ph3 engine library functions, headers, routines
-  and shot/item data (on hover)
-+ A variety of useful snippets
++ Evidenziazione della sintassi
++ Completamento del codice per funzioni, intestazioni, routine, funzioni della libreria del motore ph3 e dati colpo/oggetto
++ Documentazione su richiesta per funzioni, intestazioni e routine della libreria del motore ph3 e dati colpo/oggetto (al passaggio del mouse)
++ Una varietà di snippets utili
 
 ## Table of contents
 
-- [Table of contents](#table-of-contents)
-- [Install](#install)
-  - [Updating](#updating)
-- [Usage](#usage)
-  - [Completion](#completion)
-  - [Documentation](#documentation)
+- [Tavola dei contenuti](#tavola-dei-contenuti)
+- [Installazione](#installazione)
+  - [Aggiornamento](#aggiornamento)
+- [Utilizzo](#utilizzo)
+  - [Completamento](#completamento)
+  - [Documentazione](#documentazione)
   - [Snippets](#snippets)
-- [Maintainer](#maintainer)
-- [Contribute](#contribute)
-- [License](#license)
-- [Credits](#credits)
+- [Manutenzione](#manutenzione)
+- [Contributo](#contributo)
+- [Licenza](#licenza)
+- [Crediti](#crediti)
 
-## Install
+## Installazione
 
-Use `Quick Open` (<kbd>⌘</kbd> <kbd>P</kbd> on macOS,
-<kbd>⌃</kbd> <kbd>P</kbd> on Windows/Linux) and run `ext install dnh` or
-search and install it via the `Extensions` tab manually.
+Usa `l'Apertura Rapida` (<kbd>⌘</kbd> <kbd>P</kbd> su macOS,
+<kbd>⌃</kbd> <kbd>P</kbd> su Windows/Linux) su `ext install dnh` o
+cercalo e installalo manualmente tramite la scheda `Estensioni`.
 
-### Updating
+### Aggiornamento
 
-VS Code should try to auto-update the extension at regular intervals, but you
-can also check for available updates manually via
-`Extensions: Check for Updates`.
+VS Code dovrebbe provare ad aggiornare automaticamente l'estensione a intervalli regolari, ma tu
+può anche controllare manualmente gli aggiornamenti disponibili tramite
+`Estensioni: controlla gli aggiornamenti`.
 
-## Usage
+## Utilizzo
 
-Opening `.dnh` files with VS Code should automatically set the correct syntax
-highlighting and enable code completion, documentation and snippets, but you
-can also set it manually via `Change Language Mode` (e.g., for `.txt` files
-where VS Code would default to plain text without highlighting).
+L'apertura dei file ".dnh" con VS Code dovrebbe impostare automaticamente la sintassi corretta
+evidenziando e abilitando il completamento del codice, la documentazione e gli snippet, ma tu
+può anche impostarlo manualmente tramite `Cambia modalità lingua` (ad esempio, per i file `.txt`
+dove VS Code per impostazione predefinita sarebbe testo normale senza evidenziazione).
 
-### Completion
+### Completamento
 
-Code completion is currently available for ph3 engine library functions,
-headers, routines and shot/item data. The completion system is triggered simply
-by typing and will automatically try to match the most relevant result from the
-list. You can also navigate the list with
-<kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd> <kbd>←</kbd> and select a completion to
-use.
+Il completamento del codice è attualmente disponibile per le funzioni della libreria del motore ph3,
+intestazioni, routine e dati colpo/oggetto. Il sistema di completamento viene attivato semplicemente
+digitando e cercherà automaticamente di abbinare il risultato più pertinente del file
+elenco. Puoi anche navigare nell'elenco con
+<kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd> <kbd>←</kbd> e selezionare un completamento a
+utilizzo.
 
-Hitting <kbd>Tab ⇥</kbd> will insert the selected completion. Some completions
-(like functions) will have additional tab stops that allow you to navigate the
-inserted code with <kbd>Tab ⇥</kbd>. This is, for example, useful for function
-parameters.
+Premendo <kbd>Tab ⇥</kbd> verrà inserito il completamento selezionato. Alcuni completamenti
+(come le funzioni) avranno punti di tabulazione aggiuntivi che ti permetteranno di navigare nel file
+codice inserito con <kbd>Tab ⇥</kbd>. Questo è, ad esempio, utile per la funzione
+parametri.
 
-Clicking on the `ⓘ` icon displays more information about the completion while
-clicking on the `✕` icon hides this information again (depending on your
-settings, the info window might be opened by default).
+Facendo clic sull'icona `ⓘ` vengono visualizzate ulteriori informazioni sul completamento mentre
+facendo clic sull'icona `✕` si nascondono nuovamente queste informazioni (a seconda del proprio
+impostazioni, la finestra delle informazioni potrebbe essere aperta per impostazione predefinita).
 
-### Documentation
+### Documentazione
 
-Documentation is available for the same types as completion (ph3 engine library
-functions, headers, routines and shot/item data). It comes in the form of info
-windows that are activated on hover and display similar information as when
-clicking on the `ⓘ` icon on completion items.
+La documentazione è disponibile per gli stessi tipi del completamento (libreria del motore ph3
+funzioni, intestazioni, routine e dati colpo/oggetto). Si presenta sotto forma di informazioni
+finestre che vengono attivate al passaggio del mouse e visualizzano informazioni simili a quando
+facendo clic sull'icona `ⓘ` sugli elementi di completamento.
 
 ### Snippets
+Gli snippet funzionano in modo simile ai completamenti. Sono anche attivati
+automaticamente durante la digitazione e visualizzato nello stesso elenco degli elementi di completamento.
+Invece di visualizzare la documentazione in una finestra informativa, mostrano il codice che hanno
+inserire.
 
-Snippets work in a similar way as completions. They are also activated
-automatically when typing and displayed in the same list as completion items.
-Instead of displaying documentation in an info window, they show the code they
-insert.
+Anche la selezione e l'inserimento funzionano proprio come i completamenti (con
+<kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd> <kbd>←</kbd> e <kbd>Tab ⇥</kbd>).
+Ove necessario, gli snippet presentano utili tabulazioni per facilitare la navigazione
+dopo averli inseriti.
 
-Selection and insertion also functions just like completions (with
-<kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd> <kbd>←</kbd> and <kbd>Tab ⇥</kbd>).
-Wherever necessary, snippets feature useful tab stops to make navigation easier
-after inserting them.
+Generalmente hanno una priorità più alta rispetto ai completamenti, il che significa che tu
+di solito non è necessario scrivere la parola chiave completa per VS Code per evidenziare il file
+snippet corretto nell'elenco.
 
-They do generally have a higher priority than completions, which means that you
-usually do not have to write the full keyword for VS Code to highlight the
-correct snippet in the list.
-
-The following is a list of keywords that are associated to a snippet:
+Di seguito è riportato un elenco di parole chiave associate a uno snippet:
 
 + `let`
 + `if`
@@ -123,78 +120,76 @@ The following is a list of keywords that are associated to a snippet:
 + `while`
 + `ascent`
 + `local`
-+ `yield` (type `y` and hit <kbd>Tab ⇥</kbd> instead of typing the full word)
++ `yield` (digita `y` e premi <kbd>Tab ⇥</kbd> invece di digitare la parola intera)
 + `function`
 + `task`
 + `include`
 
-## Maintainer
+## Manutenzione
 
 [mserajnik][maintainer-url]
 
-## Contribute
+## Contributo
 
-You are welcome to help out!
+Siete invitati a dare una mano!
 
-[Open an issue][issues-url] or submit a pull request.
+[Apri un problema][issues-url] o invia una richiesta pull.
 
-As an exception to the paragraph under _[License](#license)_ that mentions that
-you are not allowed to use the file
-`server/src/dictionary/files/functions.json` for your own software/projects:
+Come eccezione al paragrafo sotto _[License](#license)_ che lo menziona
+non sei autorizzato a utilizzare il file
+`server/src/dictionary/files/functions.json` per il tuo software/progetti:
 
-You are hereby allowed to use this file for the purpose of _contributing_ to
-[this project][project-url]. This includes forking this repository, making
-changes and creating pull requests for those changes. You are __not__ allowed
-to fork this repository for intentions other than contributing (e.g, creating
-your own project without the intention to merge your changes back into
-upstream) without removing the file immediately afterwards.
+Sei autorizzato a utilizzare questo file allo scopo di _contribuire_ a
+[questo progetto][url-progetto]. Ciò include il fork di questo repository, il making
+modifiche e la creazione di richieste pull per tali modifiche. Non hai il permesso
+per eseguire il fork di questo repository per intenzioni diverse dal contribuire (ad esempio, creare
+il tuo progetto senza l'intenzione di unire nuovamente le tue modifiche
+upstream) senza rimuovere il file subito dopo.
 
-Additionally, any fork of this project that is created under the purpose of
-contributing __must__ include this section and the paragraph under _License_ in
-an unaltered state to assure that no one that creates forks/copies of your fork
-or uses it or parts of it in their own software/projects is allowed to use
-`server/src/dictionary/files/functions.json` without permission.
+Inoltre, qualsiasi fork di questo progetto creato con lo scopo di
+il contributo __deve__ includere questa sezione e il paragrafo sotto _Licenza_ in
+uno stato inalterato per garantire che nessuno crei fork/copie del tuo fork
+o lo utilizza o parte di esso nei propri software/progetti è autorizzato a utilizzarlo
+`server/src/dictionary/files/functions.json` senza autorizzazione.
 
-## License
+## Licenza
 
 [MIT](LICENSE.md) © Michael Serajnik
 
-Explicitly excluded from the MIT license is the file
-`server/src/dictionary/files/functions.json`. It contains a parsed version of
-[Sparen of Iría][sparen]'s [ph3 function reference][sparen-function-reference]
-and requires you to get his permission to use it. The file is therefore under
-[no license][no-license] and you __do not__ have permission to use it in your
-own software/projects.
+Esplicitamente escluso dalla licenza MIT è il file
+`server/src/dictionary/files/functions.json`. Contiene una versione analizzata di
+[Riferimento funzione ph3][riferimento-funzione-riferimento] di [Sparen of Iría][sparen]
+e richiede che tu ottenga il suo permesso per usarlo. Il file è quindi sotto
+[no license][no-license] e tu __non__ hai il permesso di usarlo nel tuo
+software/progetti propri.
+## Crediti
 
-## Credits
+La configurazione della sintassi è stata originariamente creata da [drakeirving][drakeirving]
+per il suo [Sublime Text extension][sublime-danmakufu]. Mi sono semplicemente convertito
+il suo file grammaticale TextMate in JSON, ha apportato alcune modifiche specifiche a VS Code e
+ampliato un po'.
 
-The syntax configuration was originally created by [drakeirving][drakeirving]
-for his [Sublime Text extension][sublime-danmakufu]. I have merely converted
-his TextMate grammar file to JSON, made some VS Code-specific adjustments and
-expanded it a bit.
+La documentazione della funzione della libreria del motore ph3 integrata è una versione analizzata di
+[Riferimento alla funzione ph3][riferimento-funzione-sparen] di [Sparen di Iría][sparen],
+per il quale è stato così gentile da darmi [il suo permesso](sparen_permission.md)
+per usarlo. L'unica cosa che ho fatto è stato trasformarlo in un formato che sia
+più facile per me lavorare e applicare alcune trasformazioni automatiche del testo.
 
-The built-in ph3 engine library function documentation is a parsed version of
-[Sparen of Iría][sparen]'s [ph3 function reference][sparen-function-reference],
-for which he was so kind as to give me [his permission](sparen_permission.md)
-to use it. The only thing I did was transforming it into a format that is
-easier for me to work with and applying some automatic text transformations.
+Se una funzione si comporta diversamente da quanto dichiarato in questa estensione, per favore
+riferimento incrociato con quello di Sparen
+[riferimento funzione ph3][riferimento-funzione-sparen] e the
+[documentazione ufficiale Danmakufu ph3][touhou-danmakufu-docs] (Giapponese, però
+Google Translate o altri servizi di traduzione automatica dovrebbero funzionare
+_abbastanza bene_ nella maggior parte dei casi) in quanto potrebbero essere più aggiornati e/o contenere
+correzioni per errori.
 
-If a function behaves differently than stated in this extension, please
-cross-reference with Sparen's
-[ph3 function reference][sparen-function-reference] and the
-[official Danmakufu ph3 documentation][touhou-danmakufu-docs] (Japanese, though
-Google Translate or other automatic translation services should work
-_well enough_ in most cases) as they may be more up-to-date and/or contain
-fixes for errors.
+I [tutorial][sparen-tutorial] di Sparen sono fantastici e dovresti assolutamente
+dai un'occhiata se vuoi entrare nello scripting di Danmakufu.
 
-Sparen's [tutorials][sparen-tutorials] are brilliant and you should definitely
-check them out if you want to get into Danmakufu scripting.
-
-The extension icon (of which you can also see a higher resolution version of at
-the top of this readme) is one of [Alphes' Touhou portraits][alphes-portraits]
-(free to use and edit for non-commercial projects). I have simply made it
-square and adjusted the size so it fits the VS Code Marketplace guidelines.
-
+L'icona dell'estensione (di cui puoi vedere anche una versione a risoluzione più alta di at
+parte superiore di questo readme) è uno dei [ritratti di Touhou di Alphes][alphes-portraits]
+(gratuito da usare e modificare per progetti non commerciali). L'ho semplicemente fatto
+quadrato e regolato le dimensioni in modo che si adattino alle linee guida di VS Code Marketplace.
 [syntax-highlighting-example]: https://github.com/mserajnik/dnh/raw/master/images/syntax-highlighting-example.png
 
 [vs-code]: https://code.visualstudio.com/

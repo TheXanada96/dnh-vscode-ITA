@@ -1,9 +1,9 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
+Tutte le modifiche importanti a questo progetto saranno documentate in questo file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
-and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+Il formato si basa su [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+e questo progetto aderisce a [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
@@ -11,117 +11,114 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-+ Updated the ph3 function reference
-+ Updated dependencies
++ Aggiornato il riferimento alla funzione ph3
++ Dipendenze aggiornate
 
 ### Fixed
 
-+ Fixed the `alternative` snippet (contribution by user ooa113y)
++ Corretto lo snippet `alternativo` (contributo dell'utente ooa113y)
 
 ## [1.9.0] - 2019-10-24
 
 ### Changed
 
-+ Updated the ph3 function reference
-+ Updated dependencies
++ Aggiornato il riferimento alla funzione ph3
++ Dipendenze aggiornate
 
 ## [1.8.0] - 2019-07-18
 
 ### Changed
 
-+ Updated dependencies
++ Dipendenze aggiornate
 
 ## [1.7.0] - 2019-07-05
 
 ### Changed
 
-+ Updated ph3 function reference
-+ Updated dependencies
++ Dipendenza aggiornata con riferimento ph3 aggiornato
++ Dipendenze aggiornate
 
 ## [1.6.0] - 2019-05-07
 
 ### Changed
 
-+ Updated dependencies
++ Dipendenze aggiornate
 
 ## [1.5.1] - 2019-03-11
 
 ### Fixed
 
-+ Fixed language server not working by including `semver` in the extension
-  package
-
++ Risolto il problema con il server della lingua che non funzionava includendo `semver` nell'estensione pacchetto
 ## [1.5.0] - 2019-03-06
 
 ### Changed
 
-+ Reintroduced support for unsaved files
-+ Updated tooling
-+ Refactored code
++ Reintrodotto il supporto per i file non salvati
++ Strumenti aggiornati
++ Codice refactoring
 
 ## [1.4.0] - 2019-02-28
 
 ### Changed
 
-+ Updated ph3 function reference
-+ Updated Travis CI configuration
-+ Updated dependencies
++ Riferimento funzione ph3 aggiornato
++ Configurazione Travis CI aggiornata
++ Dipendenze aggiornate
 
 ## [1.3.0] - 2018-07-15
 
 ### Changed
 
-+ Updated ph3 function reference
-+ Adjusted copyright notices in license to comply with the standard
-+ Updated dependencies
++ Riferimento funzione ph3 aggiornato
++ Avvisi di copyright modificati in licenza per conformarsi allo standard
++ Dipendenze aggiornate
 
 ## [1.2.0] - 2018-06-28
 
 ### Added
 
-+ Added basic shot and item data support
-+ Refactored JSON processing
-+ Added VS Code Marketplace link in form of a badge
++ Aggiunto il supporto per i dati di colpo e oggetto di base
++ Elaborazione JSON refactored
++ Aggiunto il collegamento VS Code Marketplace sotto forma di badge
 
 ### Changed
 
-+ Adjusted/expanded readme
-+ Updated dependencies
++ Readme adattato/espanso
++ Dipendenze aggiornate
 
 ## [1.1.0] - 2018-06-27
 
 ### Added
 
-+ Added language server for code completion and on-demand documentation on
-  hover
-+ Added snippets
-
++ Aggiunto server linguistico per il completamento del codice e documentazione su richiesta
+  librarsi
++ Snippets aggiunti
 ## [1.0.3] - 2018-06-23
 
 ### Removed
 
-+ Removed unnecessary `fileTypes` section in `syntaxes/dnh.tmLanguage.json`
++ Rimossa la sezione `fileTypes` non necessaria in `syntaxes/dnh.tmLanguage.json`
 
 ### Fixed
 
-+ Fixed `TouhouDanmakufu` header not getting highlighted
++ Risolto il problema con l'intestazione "TouhouDanmakufu" che non veniva evidenziata
 
 ## [1.0.2] - 2018-06-23
 
 ### Fixed
 
-+ Reduced amount of keywords in `package.json`
-+ Corrected `galleryBanner.theme` to `dark`
++ Numero ridotto di parole chiave in `package.json`
++ Corretto `galleryBanner.theme` in `dark`
 
 ## [1.0.1] - 2018-06-23
 
 ### Added
 
-+ Added extension icon to `README.md` for some flair
++ Aggiunta l'icona dell'estensione a `README.md` per un tocco di stile
 
 ### Fixed
 
-+ Added the correct keywords in `package.json`
++ Aggiunte le parole chiave corrette in `package.json`
 
 ## 1.0.0 - 2018-06-23
 

@@ -1,18 +1,18 @@
 /**
- * This is a simple script to parse Sparen's ph3 function reference and
- * transform it into the format this extension needs to work.
+* Questo è un semplice script per analizzare il riferimento alla funzione ph3 di Sparen e
+ * trasformalo nel formato di cui ha bisogno questa estensione per funzionare.
  *
- * Usage: extract the JSON from Sparen's JS files into files and put them into
- * `./files` (e.g., `./files/system.json`, `./files/standard.json` and
+ * Utilizzo: estrai il JSON dai file JS di Sparen in file e inseriscili in
+ * `./files` (ad esempio, `./files/system.json`, `./files/standard.json` e
  * `./files/object.json`).
  *
- * Run this parser via `node ./index.js`. This combines and transforms the
- * files and puts the output into
+ * Esegui questo parser tramite `node ./index.js`. Questo combina e trasforma il
+ * file e inserisce l'output in
  * `../../server/src/dictionary/files/functions.json`.
  *
- * DO NOT use this and make the parsed versions available publicly (including
- * paid versions of your own software/projects) without asking for Sparen's
- * permission to do so.
+ * NON utilizzare questo e rendere pubblicamente disponibili le versioni analizzate (incluso
+ * versioni a pagamento del tuo software/progetti) senza richiedere Sparen
+ * permesso di farlo.
  */
 
 const path = require('path')
